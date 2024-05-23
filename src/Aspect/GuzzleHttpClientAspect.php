@@ -73,7 +73,7 @@ class GuzzleHttpClientAspect extends AbstractAspect
             Breadcrumb::LEVEL_INFO,
             Breadcrumb::TYPE_DEFAULT,
             'guzzle',
-            $uri,
+            (string) $uri,
             $data
         ));
 
