@@ -1,26 +1,22 @@
 # Sentry
 
-[中文说明](README_CN.md)
+[English](README.md)
 
-[![Latest Version](https://img.shields.io/packagist/v/friendsofhyperf/sentry.svg?style=flat-square)](https://packagist.org/packages/friendsofhyperf/sentry)
-[![Total Downloads](https://img.shields.io/packagist/dt/friendsofhyperf/sentry.svg?style=flat-square)](https://packagist.org/packages/friendsofhyperf/sentry)
-[![GitHub license](https://img.shields.io/github/license/friendsofhyperf/sentry)](https://github.com/friendsofhyperf/sentry)
+Hyperf 的 Sentry 组件。
 
-The sentry component for Hyperf.
-
-## Installation
+## 安装
 
 ```shell
 composer require friendsofhyperf/sentry
 ```
 
-## Publish
+## 发布配置
 
 ```shell
 php bin/hyperf.php vendor:publish friendsofhyperf/sentry
 ```
 
-## Register Logger Handler
+## 注册 LoggerHandler
 
 ```php
 <?php
@@ -53,7 +49,7 @@ return [
 
 ```
 
-## Sentry Running log
+## 配置 Sentry 运行日志
 
 ```php
 <?php
@@ -66,7 +62,7 @@ return [
 ];
 ```
 
-## Annotation
+## 注解
 
 ```php
 <?php
@@ -84,7 +80,7 @@ class Foo
 }
 ```
 
-## Tracing
+## 链路追踪
 
 ```env
 SENTRY_TRACING_ENABLE_AMQP=true
@@ -103,16 +99,7 @@ SENTRY_TRACING_SPANS_REDIS=true
 SENTRY_TRACING_SPANS_SQL_QUERIES=true
 ```
 
-## Sentry Develop Docs
+## Sentry 开发文档
 
-- https://github.com/open-telemetry/semantic-conventions/tree/main
-- https://develop.sentry.dev/sdk/performance/span-operations/#database
-
-## Contact
-
-- [Twitter](https://twitter.com/huangdijia)
-- [Gmail](mailto:huangdijia@gmail.com)
-
-## License
-
-[MIT](LICENSE)
+- OpenTelemetry 语义约定 [semantic-conventions](https://github.com/open-telemetry/semantic-conventions/tree/main)
+- Sentry Span 操作命名规范 [span-operations](https://develop.sentry.dev/sdk/performance/span-operations/#database)
